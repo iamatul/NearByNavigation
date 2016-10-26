@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bcet.nearbynavigation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.bcet.osman.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/proj"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bcet.nearbynavigation.home_page"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bcet.nearbynavigation.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bcet.nearbynavigation.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bcet.nearbynavigation.Map"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bcet.nearbynavigation.Map" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bcet.nearbynavigation.NavigateTo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bcet.nearbynavigation.NavigateTo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bcet.nearbynavigation.SearchByLocation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bcet.nearbynavigation.SearchByLocation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bcet.nearbynavigation.map1"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bcet.nearbynavigation.map1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bcet.nearbynavigation.list"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bcet.nearbynavigation.list" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.bcet.nearbynavigation.DetailActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bcet.nearbynavigation.DetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDWehdpTjfZ9GFBckNEFZOrjRu_etn3Dig" />
+
+       
+    </application>
+
+</manifest>
